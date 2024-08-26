@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,18 +15,118 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-              }
+                primary: 'rgb(171, 239, 95);',
+                secondary: 'rgb(28, 28, 28);',
+              },
+              fontFamily: {
+                manrope: ["Manrope", "sans-serif"],
+              },
             }
           }
         }
       </script>
     
 </head>
-<body>
+<body class="font-manrope">
+
     
-    <main class="max-w">
+    <main class="max-w-screen-lg mx-auto">
 
+      <header class="bg-gradient-to-b from[rgb(255, 255, 255)] to[rgba(255, 255, 255, 0)]">
 
+        <nav>
+
+          <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-1"></i>Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <i class="fa-solid fa-magnifying-glass bg-white rounded-full mr-3"></i>
+              <i class="fa-solid fa-cart-shopping bg-white rounded-full mr-3"></i>
+              <a class="btn bg-primary rounded-full">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-secondary rounded-full p-2 text-white"></i></a>
+            </div>
+          </div>
+
+        </nav>
+
+        <!-- banner section starts -->
+
+        <div class="hero min-h-screen">
+          <div class="hero-content flex-col ">
+            <img
+              src="./assets/banner.png"
+              class="max-w-sm rounded-lg shadow-2xl" />
+            <div class="text-center">
+              <h1 class="text-5xl font-bold">A barn house of this design has a striking appearance</h1>
+              <p class="py-6">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <button class="btn bg-primary">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-1"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- banner section ends here -->
+
+      </header>
+
+      <!-- space section starts -->
+
+      <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="./assets/Rectangle.png"
+            class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Box Office News!</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- space section ends -->
 
     </main>
 
