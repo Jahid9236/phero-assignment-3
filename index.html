@@ -27,7 +27,7 @@
       </script>
     
 </head>
-<body class="font-manrope">
+<body class="font-manrope mr-0">
 
   <!-- header section starts here -->
 
@@ -37,38 +37,10 @@
 
       <div class="navbar bg-base-100">
         <div class="navbar-start">
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
-                <ul class="p-2">
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </li>
-              <li><a>Item 3</a></li>
-            </ul>
-          </div>
+          
           <a class="btn btn-ghost text-xl"><i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-1"></i>Rinterio</a>
         </div>
-        <div class="navbar-center hidden lg:flex">
+        <div class="navbar-center hidden lg:flex ">
           <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
             <li><a>Services</a></li>
@@ -77,11 +49,44 @@
             <li><a>Contact Us</a></li>
           </ul>
         </div>
-        <div class="navbar-end ">
+        
+        
+
+        <div class="navbar-end hidden lg:flex">
           <i class="fa-solid fa-magnifying-glass bg-white rounded-full mr-3"></i>
           <i class="fa-solid fa-cart-shopping bg-white rounded-full mr-3"></i>
           <a class="btn bg-primary rounded-full">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 bg-secondary rounded-full p-2 text-white"></i></a>
         </div>
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Item 1</a></li>
+            <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        
       </div>
 
     </nav>
@@ -207,12 +212,12 @@
         <section class="max-w-screen-lg mx-auto my-10 p-5">
           
           <div class="flex flex-col text-center mb-5">
-            <p ><i class="fa-solid fa-arrow-right"></i>How we works</p>
+            <p ><span class="p-3 bg-white rounded-xl"><i class="fa-solid fa-arrow-right"></i>How we works</span></p>
             <h2 class="text-3xl lg:text-4xl font-bold my-5">Our Works Process</h2>
             <p class="lg:w-5/6 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
 
-          <div class="grid grid-cols-1 md: grid-cols-2 lg:grid-cols-4 gap-3 ">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 ">
 
             <div class="bg-pink-300 p-4 rounded-lg">
               <img src="./assets/concept.png" alt="">
@@ -247,6 +252,56 @@
         </section>
 
         <!-- work process section ends here -->
+
+        <!-- portfolio section -->
+
+        <section  class="bg-white">
+
+          <div class="max-w-screen-lg mx-auto my-10 p-5 text-center">
+            <p ><span class="p-3 bg-green-50 rounded-xl"><i class="fa-solid fa-arrow-right"></i>How we works</span></p>
+            <h2 class="text-3xl lg:text-4xl font-bold my-5">Our Latest Portfolio</h2>
+          </div>
+
+          <div>
+
+            <div class="flex flex-col lg:flex-row max-w-screen-lg mx-auto my-10 p-5 gap-4">
+              <div>
+                <img class="w-full" src="./assets/img1.png" alt="">
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-gray-700">Commercial</h4>
+                <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                <p class="">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-1"></i></p>
+              </div>
+              <div>
+                <img class="w-full" src="./assets/img2.png" alt="">
+              </div>
+            </div>
+
+            <div class="flex flex-col-reverse lg:flex-row max-w-screen-lg mx-auto my-10 p-5 gap-4">
+              <div>
+                <img class="w-full" src="./assets/img3.png" alt="">
+              </div>
+              <div>
+                <img class="w-full" src="./assets/img4.png" alt="">
+              </div>
+              <div>
+                <h4 class="font-bold text-lg text-gray-700">Commercial</h4>
+                <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                <p class="">View Details<i class="fa-solid fa-arrow-right -rotate-45 bg-primary rounded-full p-1"></i></p>
+              </div>
+              <div>
+                <img class="w-full" src="./assets/img5.png" alt="">
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <!-- portfolio section ends -->
+
+        <!-- artiE:E -->
 
     </main>
 
